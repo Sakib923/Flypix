@@ -1,5 +1,5 @@
 import {createBrowserRouter, createRoutesFromElements, Route, RouterProvider} from "react-router";
-import MainLayout from "./Layout/MainLayout.jsx";
+import MainLayout from "./layout/MainLayout.jsx";
 
 
 const router = createBrowserRouter(createRoutesFromElements(
