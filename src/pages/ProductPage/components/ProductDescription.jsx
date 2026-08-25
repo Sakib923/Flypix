@@ -2,7 +2,7 @@ import FeatureCard from '@/components/FeatureCard';
 import FeatureText from '@/components/FeatureText';
 import Heading from '@/components/Heading';
 
-export default function DescriptionSection() {
+export default function ProductDescription() {
     return (
         <div>
             <div className="space-y-8">
