@@ -18,7 +18,7 @@ export default function ProductPage({ price }) {
     return (
         <div className="space-x-12 bg-[#F8FAFC] px-[16px] pt-[24px] lg:px-[40px] xl:px-[80px]">
             {/* Product */}
-            <div className="flex space-x-6 xl:space-x-12">
+            <div className="flex flex-col space-x-6 md:flex-row xl:space-x-12">
                 {/* Image Gallery  */}
                 <div className="flex-1 space-y-[12px]">
                     <img
@@ -27,11 +27,11 @@ export default function ProductPage({ price }) {
                         className="md:size-[350px] xl:size-[593px]"
                     />
                     <div className="flex space-x-2">
-                        <img src="" alt="" className="size-[56px]" />
-                        <img src="" alt="" className="size-[56px]" />
-                        <img src="" alt="" className="size-[56px]" />
-                        <img src="" alt="" className="size-[56px]" />
-                        <img src="" alt="" className="size-[56px]" />
+                        <img src="" alt="" className="size-14" />
+                        <img src="" alt="" className="size-14" />
+                        <img src="" alt="" className="size-14" />
+                        <img src="" alt="" className="size-14" />
+                        <img src="" alt="" className="size-14" />
                     </div>
                 </div>
 
@@ -82,22 +82,22 @@ export default function ProductPage({ price }) {
                 </ServiceCard>
             </div>
 
-            <div className="pointer font-mebdium flex w-full items-center justify-center space-x-24 py-20 text-4xl">
+            <div className="pointer font-mebdium flex w-full items-center justify-center gap-x-4 py-20 text-4xl md:gap-x-3 lg:gap-x-4">
                 <button
                     onClick={() => setActiveSection('description')}
-                    className={`${activeSectoin === 'description' ? 'border-b-4 border-[#476b16] text-[#476B16]' : 'text-[#475569]'} px-6 py-3`}
+                    className={`${activeSectoin === 'description' ? 'border-b-4 border-[#476b16] text-[#476B16]' : 'text-[#475569]'} px-1 py-2 text-sm sm:px-2 sm:text-[18px] md:px-4 md:text-2xl lg:px-[14px] lg:py-3`}
                 >
                     Description
                 </button>
                 <button
                     onClick={() => setActiveSection('specification')}
-                    className={`${activeSectoin === 'specification' ? 'border-b-4 border-[#476b16] text-[#476B16]' : 'text-[#475569]'} px-6 py-3`}
+                    className={`${activeSectoin === 'specification' ? 'border-b-4 border-[#476b16] text-[#476B16]' : 'text-[#475569]'} px-1 py-2 text-sm sm:px-2 sm:text-[18px] md:px-4 md:text-2xl lg:px-[14px] lg:py-3`}
                 >
                     Specification
                 </button>
                 <button
                     onClick={() => setActiveSection('review')}
-                    className={`${activeSectoin === 'review' ? 'border-b-4 border-[#476b16] text-[#476B16]' : 'text-[#475569]'} px-6 py-3`}
+                    className={`${activeSectoin === 'review' ? 'border-b-4 border-[#476b16] text-[#476B16]' : 'text-[#475569]'} px-1 py-2 text-sm sm:px-2 sm:text-[18px] md:px-4 md:text-2xl lg:px-[14px] lg:py-3`}
                 >
                     Reviews
                 </button>
@@ -113,7 +113,7 @@ export default function ProductPage({ price }) {
                             <Heading>
                                 DJI MAVIC 3 PRO : The new Era of Drone Industry
                             </Heading>
-                            <p className="text-[26px] text-[#475569]">
+                            <p className="text-justify text-[26px] text-[#475569]">
                                 Lorem ipsum dolor sit amet consectetur. Elit eu
                                 a sed at a enim. In sed enim nibh lorem commodo
                                 arcu tempus. Lectus pellentesque aliquam
@@ -135,7 +135,7 @@ export default function ProductPage({ price }) {
                         </div>
                         <div>
                             <Heading>Premium Features</Heading>
-                            <div className="flex flex-col md:flex-row">
+                            <div className="mb-10 flex flex-col md:mb-12 md:flex-row md:items-center md:gap-x-7 lg:mb-[120px] lg:gap-x-12">
                                 <div className="flex-1 space-y-[24px] lg:space-y-[60px]">
                                     <div className="grid auto-cols-fr grid-flow-col grid-rows-2 gap-3">
                                         <FeatureCard
@@ -163,14 +163,44 @@ export default function ProductPage({ price }) {
                                             label="5 km"
                                         />
                                     </div>
-                                    <div className='space-y-[8px] lg:space-y-[16px]'>
+                                    <div className="space-y-[8px] lg:space-y-[16px]">
                                         <FeatureText feature="Lorem ipsum dolor sit amet consectetur. Elit eu a sed at a enim." />
                                         <FeatureText feature="Consectetur. Elit eu a sed at a enim." />
                                         <FeatureText feature="Sit lorem ipsum dolor sit amet amet consectetur" />
                                         <FeatureText feature="Lorem ipsum dolor sit amet consectetur. Elit eu a sed at a enim." />
                                     </div>
                                 </div>
-                                <div className="flex-1"></div>
+                                <div className="flex-1">
+                                    <img
+                                        src="https://tse1.mm.bing.net/th/id/OIP.BG-kYSMrvQgiXo0bzUWlLQHaEo?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                                        alt=""
+                                        className="h-auto w-full"
+                                    />
+                                </div>
+                            </div>
+                            <div className="space-y-8 pb-10 md:pb-12 lg:pb-[120px]">
+                                <Heading>DJI MAVIC 3 PRO</Heading>
+                                <p className="text-justify text-[26px] text-[#475569]">
+                                    Lorem ipsum dolor sit amet consectetur. Elit
+                                    eu a sed at a enim. In sed enim nibh lorem
+                                    commodo arcu tempus. Lectus pellentesque
+                                    aliquam tristique amet volutpat pharetra
+                                    vulputate. Ultricies tempor magna bibendum
+                                    ac feugiat sed dignissim purus tellus. Odio
+                                    semper vestibulum sed eget. Bibendum egestas
+                                    tincidunt mauris sed magna in cursus.
+                                    Aliquam id feugiat sed amet lectus at. Ante
+                                    in sed turpis urna. Blandit purus dolor enim
+                                    ipsum ullamcorper arcu arcu convallis
+                                    porttitor. Ultricies tempor magna bibendum
+                                    ac feugiat sed dignissim purus tellus. Odio
+                                    semper vestibulum sed eget. Bibendum egestas
+                                    tincidunt mauris sed magna in cursus.
+                                    Aliquam id feugiat sed amet lectus at. Ante
+                                    in sed turpis urna. Blandit purus dolor enim
+                                    ipsum ullamcorper arcu arcu convallis
+                                    porttitor.
+                                </p>
                             </div>
                         </div>
                         <div></div>
