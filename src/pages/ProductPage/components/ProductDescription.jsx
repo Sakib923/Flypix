@@ -2,10 +2,10 @@ import FeatureCard from '@/components/FeatureCard';
 import FeatureText from '@/components/FeatureText';
 import Heading from '@/components/Heading';
 
-export default function ProductDescription() {
+export default function ProductDescription({productName, description1, description2}) {
     return (
         <div>
-            <div className="space-y-8">
+            <div className="mb-10 space-y-8 sm:mb-10 md:mb-8 lg:mb-20 xl:mb-20 2xl:mb-20">
                 <img src="" alt="" className="h-114.5 w-full" />
                 <Heading>
                     DJI MAVIC 3 PRO : The new Era of Drone Industry
@@ -28,30 +28,35 @@ export default function ProductDescription() {
                 </p>
             </div>
             <div>
-                <Heading>Premium Features</Heading>
-                <div className="mb-10 flex flex-col md:mb-12 md:flex-row md:items-center md:gap-x-7 lg:mb-[120px] lg:gap-x-12">
-                    <div className="flex-1 space-y-[24px] lg:space-y-[60px]">
-                        <div className="grid auto-cols-fr grid-flow-col grid-rows-2 gap-3">
-                            <FeatureCard heading="Width" label="35 mm" />
-                            <FeatureCard heading="Weight" label="0.4 kg" />
-                            <FeatureCard heading="Height" label="18 sm" />
-                            <FeatureCard heading="Speed" label="80 km/h" />
-                            <FeatureCard heading="Autonamy" label="30 min" />
-                            <FeatureCard heading="Range" label="5 km" />
+                <div className='space-y-4 sm:space-y-4 md:space-y-4 lg:space-y-6 xl:space-y-6 2xl:space-y-6'>
+                    <Heading>Premium Features</Heading>
+                    <div className="mb-10 flex flex-col gap-y-7 md:mb-12 md:flex-row md:items-center md:gap-x-7 lg:mb-[120px] lg:gap-x-12">
+                        <div className="flex-1 space-y-[24px] lg:space-y-[60px]">
+                            <div className="grid auto-cols-fr grid-flow-col grid-rows-2 gap-3">
+                                <FeatureCard heading="Width" label="35 mm" />
+                                <FeatureCard heading="Weight" label="0.4 kg" />
+                                <FeatureCard heading="Height" label="18 sm" />
+                                <FeatureCard heading="Speed" label="80 km/h" />
+                                <FeatureCard
+                                    heading="Autonamy"
+                                    label="30 min"
+                                />
+                                <FeatureCard heading="Range" label="5 km" />
+                            </div>
+                            <div className="space-y-[8px] lg:space-y-[16px]">
+                                <FeatureText feature="Lorem ipsum dolor sit amet consectetur. Elit eu a sed at a enim." />
+                                <FeatureText feature="Consectetur. Elit eu a sed at a enim." />
+                                <FeatureText feature="Sit lorem ipsum dolor sit amet amet consectetur" />
+                                <FeatureText feature="Lorem ipsum dolor sit amet consectetur. Elit eu a sed at a enim." />
+                            </div>
                         </div>
-                        <div className="space-y-[8px] lg:space-y-[16px]">
-                            <FeatureText feature="Lorem ipsum dolor sit amet consectetur. Elit eu a sed at a enim." />
-                            <FeatureText feature="Consectetur. Elit eu a sed at a enim." />
-                            <FeatureText feature="Sit lorem ipsum dolor sit amet amet consectetur" />
-                            <FeatureText feature="Lorem ipsum dolor sit amet consectetur. Elit eu a sed at a enim." />
+                        <div className="flex-1">
+                            <img
+                                src="https://tse1.mm.bing.net/th/id/OIP.BG-kYSMrvQgiXo0bzUWlLQHaEo?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                                alt=""
+                                className="h-auto w-full"
+                            />
                         </div>
-                    </div>
-                    <div className="flex-1">
-                        <img
-                            src="https://tse1.mm.bing.net/th/id/OIP.BG-kYSMrvQgiXo0bzUWlLQHaEo?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
-                            alt=""
-                            className="h-auto w-full"
-                        />
                     </div>
                 </div>
                 <div className="space-y-8 pb-10 md:pb-12 lg:pb-[120px]">
