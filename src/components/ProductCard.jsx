@@ -11,12 +11,12 @@ export default function ProductCard({
 }) {
     const [flag, setFlag] = useState(true);
     return (
-        <div className="w-75 space-y-3 ">
+                <div className="min-w-0 w-full max-w-none space-y-3">
             <div className="group relative rounded-xl">
                 <img
                     src="https://imgv3.fotor.com/images/gallery/cartoon-character-generated-by-Fotor-ai-art-creator.jpg"
                     alt=""
-                    className="z-0 h-75 w-75 overflow-hidden rounded-xl object-cover"
+                                       className="aspect-square h-auto w-full overflow-hidden rounded-xl object-cover"
                 />
                 <button
                     className={`drop-shadow-[0_2px_8px_rgba(15,28,51,0.05)]_drop-shadow-[0_10px_14px_rgba(15,28,51,0.08)] ${flag ? "flex" : "hidden group-hover:flex"} absolute top-3 right-3 z-10 flex size-12 items-center justify-center rounded-full bg-white`}
