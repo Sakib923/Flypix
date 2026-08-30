@@ -11,7 +11,7 @@ export default function ProductCard({
 }) {
     const [flag, setFlag] = useState(true);
     return (
-                <div className="min-w-0 w-full max-w-none space-y-3">
+        <div className="w-full max-w-none min-w-0 space-y-3">
             <div className="group relative rounded-xl">
                 <img
                     src="https://imgv3.fotor.com/images/gallery/cartoon-character-generated-by-Fotor-ai-art-creator.jpg"
@@ -19,14 +19,14 @@ export default function ProductCard({
                                        className="aspect-square h-auto w-full overflow-hidden rounded-xl object-cover"
                 />
                 <button
-                    className={`drop-shadow-[0_2px_8px_rgba(15,28,51,0.05)]_drop-shadow-[0_10px_14px_rgba(15,28,51,0.08)] ${flag ? "flex" : "hidden group-hover:flex"} absolute top-3 right-3 z-10 flex size-12 items-center justify-center rounded-full bg-white`}
+                    className={`drop-shadow-[0_2px_8px_rgba(15,28,51,0.05)]_drop-shadow-[0_10px_14px_rgba(15,28,51,0.08)] ${flag ? 'flex' : 'flex md:hidden group-hover:flex'} absolute top-3 right-3 z-10 flex size-12 items-center justify-center rounded-full bg-white`}
                     onClick={() => setFlag(!flag)}
                 >
                     <LoveIcon
                         className={`${flag ? 'text-red-500' : 'stroke-[#64748B] stroke-2 text-white'} size-6`}
                     />
                 </button>
-                <button className="absolute bottom-4 left-1/2 z-10 hidden w-67 -translate-x-1/2 justify-between rounded-lg bg-[#99E830] p-4 text-[#0F172A] group-hover:flex">
+                <button className="absolute right-4 bottom-4 left-4 z-10 flex items-center justify-between rounded-lg bg-[#99E830] p-4 text-[#0F172A] group-hover:flex md:hidden">
                     <p className="text-[16px] font-medium">Add to cart</p>
                     <Cart />
                 </button>
@@ -42,7 +42,7 @@ export default function ProductCard({
 
                         return (
                             <Star
-                                className={` ${isFilled ? 'text-[#FF9900]' : 'text-white  stroke-gray-500'}`}
+                                className={` ${isFilled ? 'text-[#FF9900]' : 'stroke-gray-500 text-white'}`}
                             />
                         );
                     })}
