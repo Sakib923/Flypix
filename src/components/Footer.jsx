@@ -24,10 +24,10 @@ export default function Footer() {
                 </div>
                 <div className="flex flex-col items-center space-y-2 lg:items-start">
                     <h1 className="text-[16px] font-medium">Company</h1>
-                    <Link className="text-[14px] font-normal">Home</Link>
-                    <Link className="text-[14px] font-normal">About Us</Link>
-                    <Link className="text-[14px] font-normal">Contact Us</Link>
-                    <Link className="text-[14px] font-normal">Shop</Link>
+                    <Link to="/" className="text-[14px] font-normal">Home</Link>
+                    <Link to="about" className="text-[14px] font-normal">About Us</Link>
+                    <Link to="contact" className="text-[14px] font-normal">Contact Us</Link>
+                    <Link to="product" className="text-[14px] font-normal">Shop</Link>
                 </div>
                 <div className="flex flex-col items-center space-y-2 lg:items-start">
                     <h1 className="text-[16px] font-medium">Category</h1>
