@@ -1,5 +1,5 @@
 import Label from '@/components/Label';
-import HappyCustomerIcon from '../../../assets/happyCustomer.svg?react';
+import HappyCustomerIcon from '../assets/happyCustomer.svg?react';
 import Heading from '@/components/Heading';
 import CustomerFeedbackCard from '@/components/CustomerFeedbackCard';
 

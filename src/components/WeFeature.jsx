@@ -1,5 +1,5 @@
 import Label from '@/components/Label';
-import FeatureIcon from '../../../assets/featureIcon.svg?react';
+import FeatureIcon from '../assets/featureIcon.svg?react';
 import Heading from '@/components/Heading';
 import CategoryCard from '@/components/CategoryCard';
 
