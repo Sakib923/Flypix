@@ -5,49 +5,56 @@ import DeliveryIcon from '@/assets/delivery.svg?react';
 import PaymentIcon from '@/assets/payment.svg?react';
 import WarrantyIcon from '@/assets/warrenty.svg?react';
 import TrustFeatureCard from '@/components/TrustFeatureCard';
+import WeFeature from '@/components/WeFeature';
+import HappyCustomers from '@/components/HappyCustomers';
+import StorySection from './components/StorySection';
 export default function AboutPage() {
     return (
-        <div>
-            <div id="aboutPage" className="block h-fit px-20">
-                <div className="relative h-76 w-full overflow-hidden">
+        <div className="space-y-12 pt-8 pb-30 sm:space-y-13 md:space-y-14 lg:space-y-20 xl:space-y-26 2xl:space-y-30">
+            <div
+                id="aboutPage"
+                className="block h-fit space-y-12 px-4 sm:space-y-13 sm:px-7 md:space-y-14 md:px-9 lg:space-y-20 lg:px-14 xl:space-y-26 xl:px-17 2xl:space-y-30 2xl:px-22"
+            >
+                {/* Banner */}
+                <div className="relative h-fit max-h-76 w-full overflow-hidden rounded-[8px]">
                     <img
                         src={aboutBanner}
                         alt=""
                         className="-z-10 h-full w-full object-cover"
                     />
-                    <div className="absolute inset-0 flex flex-col items-center justify-center space-y-4 px-60 py-20 text-white">
+                    <div className="absolute inset-0 flex flex-col items-center justify-center space-y-4 px-6 py-6 text-white sm:px-22.5 sm:py-9.25 md:px-31 md:py-12 lg:px-43 lg:py-14.5 xl:px-53.5 xl:py-18 2xl:px-64 2xl:py-20">
                         <Heading className="text-center text-[#A8FF35]">
                             About Us
                         </Heading>
-                        <p className="text-[40px]">
+                        <p className="text-center text-base sm:text-[20px] md:text-[24px] lg:text-[29px] xl:text-[36px] 2xl:text-[42px]">
                             WE provide you the best imaging and Flying
                             Experiences!
                         </p>
                     </div>
                 </div>
 
-                <div className="flex items-center justify-between">
-                    <div className="flex-1">
-                        <div>
-                            <Heading>Our Story</Heading>
-                            <p className="text-[40px]">
-                                The Story of Our Drone Shop & Commitment to
-                                Excellence
-                            </p>
-                        </div>
-                        <p className="text-[16px]">
-                            Welcome to Iconic Style, your premier destination
-                            for exquisite fashion products including three-piece
-                            ensembles and sarees. At Iconic Style, we believe
-                            that fashion is a
+                {/* Our Story */}
+                <StorySection
+                    image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbkk_6taiIpcaQ5d78IpITaI7ZU7Hye7HPDP0jcg-ysJImyS7lZi48smc&s=10"
+                    imageAlt="Customers shopping at the drone store"
+                >
+                    <div className="space-y-1 lg:space-y-1.5 xl:space-y-1.75 2xl:space-y-2">
+                        <Heading className="text-[#476B16]">Our Story</Heading>
+                        <p className="text-[18px] sm:text-[20px] md:text-[24px] lg:text-[32px] xl:text-[40px]">
+                            The Story of Our Drone Shop & Commitment to
+                            Excellence
                         </p>
-                        <Button>Read More</Button>
                     </div>
-                    <div className="flex flex-1 items-end justify-end">
-                        <img src="" className="h-[360px] w-[560px]" alt="" />
-                    </div>
-                </div>
+                    <p className="text-[12px] text-[#475569] sm:text-[14px] md:text-[16px] lg:text-[17px] xl:text-[18px] 2xl:text-[18px]">
+                        Welcome to Iconic Style, your premier destination for
+                        exquisite fashion products including three-piece
+                        ensembles and sarees. At Iconic Style, we believe that
+                        fashion is a
+                    </p>
+                    <Button>Read More</Button>
+                </StorySection>
             </div>
+
             <section className="-px-20 flex flex-col bg-[#0F172A] py-8 md:flex-row">
                 <TrustFeatureCard
                     variant="about"
@@ -71,27 +78,36 @@ export default function AboutPage() {
                 />
             </section>
 
-            <div className="flex flex-row-reverse items-center justify-between px-20">
-                    <div className="flex-1">
-                        <div>
-                            <Heading>Our Story</Heading>
-                            <p className="text-[40px]">
-                                The Story of Our Drone Shop & Commitment to
-                                Excellence
-                            </p>
-                        </div>
-                        <p className="text-[16px]">
-                            Welcome to Iconic Style, your premier destination
-                            for exquisite fashion products including three-piece
-                            ensembles and sarees. At Iconic Style, we believe
-                            that fashion is a
+            {/* Story of CEO */}
+            <div className="px-4 sm:px-7 md:px-9 lg:px-14 xl:px-17 2xl:px-22">
+                <StorySection
+                    image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbkk_6taiIpcaQ5d78IpITaI7ZU7Hye7HPDP0jcg-ysJImyS7lZi48smc&s=10"
+                    imageAlt="Customers shopping at the drone store"
+                    imagePosition="left"
+                >
+                    <div>
+                        <Heading className="text-[#476B16]">
+                            STORY OF CEO
+                        </Heading>
+                        <p className="text-[18px] sm:text-[20px] md:text-[24px] lg:text-[32px] xl:text-[40px]">
+                            Tale of Our CEO’s Leadership and Vision That Drives
+                            Our Success
                         </p>
-                        <Button>Read More</Button>
                     </div>
-                    <div className="flex flex-1 ">
-                        <img src="" className="h-[360px] w-[560px]" alt="" />
-                    </div>
-                </div>
+                    <p className="text-[16px]">
+                        Welcome to Iconic Style, your premier destination for
+                        exquisite fashion products including three-piece
+                        ensembles and sarees. At Iconic Style, we believe that
+                        fashion is a r exquisite fashion products Welcome to
+                        Iconic Style, your premier destination for exquisite
+                        fashion products including three-piece ensembles and
+                        sarees. At Iconic Style.
+                    </p>
+                    <Button>Read More</Button>
+                </StorySection>
+            </div>
+            <WeFeature />
+            <HappyCustomers />
         </div>
     );
 }
