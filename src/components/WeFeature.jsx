@@ -5,7 +5,7 @@ import CategoryCard from '@/components/CategoryCard';
 
 export default function WeFeature() {
     return (
-        <div className="space-y-[28px] bg-[#F1F5F9] p-[32px] py-5 md:mx-[26px] md:rounded-[16px] md:py-8 lg:space-y-[48px] lg:py-12">
+        <div className="space-y-7 bg-[#F1F5F9] px-4 py-5 md:rounded-[16px] md:px-8 md:py-8 lg:space-y-12 lg:py-12">
             <div className="mx-auto flex w-full flex-col items-center justify-center text-center">
                 <Label label={'WE FEATURE'}>
                     <FeatureIcon />
@@ -15,7 +15,7 @@ export default function WeFeature() {
                     Seeking Adventure Thrills and Excitement Await
                 </Heading>
             </div>
-            <div className="grid grid-cols-1 gap-[20px] lg:grid-cols-2">
+            <div className="grid grid-cols-1 gap-5 lg:grid-cols-2">
                 <CategoryCard
                     name="Camera Drone"
                     image="https://tse1.mm.bing.net/th/id/OIP.QPPyWcqphBqxvhNMNOo8HwHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
