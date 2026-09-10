@@ -1,4 +1,3 @@
-import Heading from './Heading';
 import { Button } from './ui/button';
 import ArrowUpRightIcon from '../assets/arrow-up-right.svg?react';
 import DroneIcon from '../assets/doneIcon.svg?react';
