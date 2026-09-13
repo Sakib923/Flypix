@@ -14,13 +14,13 @@ export default function FormField({
     required = true,
 }) {
     const fieldClassName =
-        'w-full rounded-[4px] border-[#D9E2EC] bg-[#F8FAFC] px-[14px] py-[12px] text-[14px] text-[#0F172A] placeholder:text-[#64748B]';
+        'w-full h-[36px] sm:h-[38px] md:h-[40px] lg:h-[44px] xl:h-[48px] 2xl:h-[48px] rounded-[4px] border-[#D9E2EC] bg-[#F8FAFC] px-[14px] py-[12px] text-[14px] text-[#0F172A] placeholder:text-[#64748B]';
 
     return (
         <div className={cn('space-y-2', className)}>
             <label
                 htmlFor={name}
-                className="block text-[12px] font-medium text-[#1E293B]"
+                className="block  font-medium text-[#1E293B]   text-[12px] sm:text-[13px] md:text-[14px] lg:text-[16px] xl:text-[18px] 2xl:text-[18px]"
             >
                 {label}
             </label>
@@ -34,10 +34,7 @@ export default function FormField({
                     value={value}
                     onChange={onChange}
                     required={required}
-                    className={cn(
-                        fieldClassName,
-                        'min-h-22.5 resize-none'
-                    )}
+                    className={cn(fieldClassName, 'min-h-22.5 resize-none')}
                 />
             ) : (
                 <Input
