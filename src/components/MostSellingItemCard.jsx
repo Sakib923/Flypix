@@ -1,24 +1,27 @@
-import { Button } from "./ui/button";
-import ArrowUpRight from "../assets/arrow-up-right.svg?react"
+import { Button } from './ui/button';
+import ArrowUpRight from '../assets/arrow-up-right.svg?react';
 
-export default function MostSellingItemCard({name, price, image}){
+export default function MostSellingItemCard({ name, price, image }) {
     return (
-        <div className="w-[230px] h-[222px] flex flex-col items-end rounded-[12px] space-y-[-40px]">
-            <div className="px-[56px] py-[32px] bg-[#E2E8F0] w-[230px] h-[182px] rounded-[12px] ">
-                <img src={image} alt="" />
+        <div className="flex h-fit w-full min-w-57.5 flex-col items-end -space-y-10 rounded-[12px]">
+            <div className="flex h-fit max-h-45.5 w-full justify-center overflow-hidden rounded-[12px] bg-[#E2E8F0] px-14 py-8 lg:max-h-58">
+                <img
+                    src={image}
+                    alt=""
+                    className="block max-h-full max-w-full object-contain"
+                />
             </div>
-            <div className="px-[24px] w-[208px] py-[16px] flex justify-between bg-white rounded-b-[8px] rounded-l-[8px] shadow-[0_2.945px_17.672px_0_rgba(0,0,0,0.08)]">
-                <div className="flex flex-col space-y-[4px]">
-                    <h3 className="text-[14px] font-normal"> {name }</h3>
+            <div className="flex w-[90.43%] justify-between rounded-l-[8px] rounded-b-[8px] bg-white px-6 py-4 shadow-[0_2.945px_17.672px_0_rgba(0,0,0,0.08)]">
+                <div className="flex flex-col space-y-1">
+                    <h3 className="text-[14px] font-normal"> {name}</h3>
                     <h2 className="text-[16px] font-semibold">${price}</h2>
                 </div>
                 <div className="flex items-center justify-end">
-                    <Button >
+                    <Button>
                         <ArrowUpRight />
                     </Button>
                 </div>
             </div>
-
         </div>
-    )
+    );
 }
