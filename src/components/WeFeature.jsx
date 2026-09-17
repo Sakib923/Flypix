@@ -5,7 +5,7 @@ import CategoryCard from '@/components/CategoryCard';
 
 export default function WeFeature() {
     return (
-        <div className="space-y-7 bg-[#F1F5F9] px-4 py-5 md:rounded-[16px] md:px-8 md:py-8 lg:space-y-12 lg:py-12">
+        <div className="space-y-7 bg-[#F1F5F9] px-[16px] py-5 sm:px-[28px] md:rounded-[16px] md:px-[40px] md:py-8 lg:space-y-12 lg:px-[60px] lg:py-12 xl:px-[80px] 2xl:px-[80px]">
             <div className="mx-auto flex w-full flex-col items-center justify-center text-center">
                 <Label label={'WE FEATURE'}>
                     <FeatureIcon />
