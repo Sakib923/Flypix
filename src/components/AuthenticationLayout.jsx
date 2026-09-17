@@ -10,14 +10,14 @@ function AuthenticationLayout({ imageLink, children, className }) {
                 className
             )}
         >
-            <div className="hidden flex-1 overflow-hidden bg-red-400 md:block">
+            <div className="hidden flex-1 overflow-hidden border-[#CBD5E1] md:block md:rounded-l-[16px] md:border-y md:border-l">
                 <img
                     src={imageLink}
                     alt=""
                     className="h-full w-full object-cover"
                 />
             </div>
-            <div className="flex-1 space-y-4 px-0 py-8 sm:space-y-4.75 sm:px-4 sm:py-8.5 md:space-y-5.5 md:bg-white md:px-8 md:py-9 lg:space-y-6.75 lg:px-12 lg:py-9.5 xl:space-y-8 xl:px-16 xl:py-10 2xl:space-y-8 2xl:px-16 2xl:py-10">
+            <div className="flex-1 space-y-4 border-[#CBD5E1] px-0 py-8 sm:space-y-4.75 sm:px-4 sm:py-8.5 md:space-y-5.5 md:rounded-r-[16px] md:border-y md:border-r md:bg-white md:px-8 md:py-9 lg:space-y-6.75 lg:px-12 lg:py-9.5 xl:space-y-8 xl:px-16 xl:py-10 2xl:space-y-8 2xl:px-16 2xl:py-10">
                 {children}
             </div>
         </div>
