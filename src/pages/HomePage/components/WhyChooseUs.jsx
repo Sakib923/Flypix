@@ -7,10 +7,11 @@ import ExchangeIcon from '../../../assets/exchange.svg?react';
 import Label from '@/components/Label';
 import FacilityCard from '@/components/FacilityCard';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router';
 
 export default function WhyChooseUs() {
     return (
-        <div className="mt-[64px] flex flex-col justify-between gap-[40px] p-[16px] sm:p-[16px] md:flex-row md:gap-[32px] md:p-[40px] lg:p-[80px]">
+        <div className="flex flex-col justify-between gap-[40px] p-[16px] sm:p-[16px] md:flex-row md:gap-[32px] md:p-[40px] lg:p-[80px]">
             <div className="mx-auto flex flex-1 items-center justify-center">
                 <img
                     src="src/assets/images/Images.png"
@@ -18,7 +19,7 @@ export default function WhyChooseUs() {
                 />
             </div>
             <div className="flex flex-1 flex-col justify-center space-y-[20px] lg:space-y-[48px]">
-                <div className="flex flex-col items-center justify-center md:items-start md:space-y-[20px] lg:space-y-[24px]">
+                <div className="flex flex-col items-center justify-center gap-y-[20px] sm:gap-y-[20px] md:items-start md:gap-y-[20px] lg:gap-y-[22px] xl:gap-y-[24px] 2xl:gap-y-[24px]">
                     <div className="flex flex-col items-center justify-center space-y-[12px] text-center md:text-left">
                         <Label label={'WHY CHOOSE US'}>
                             <Stars />
@@ -49,10 +50,12 @@ export default function WhyChooseUs() {
                         </FacilityCard>
                     </div>
                 </div>
-                <div>
-                    <Button className="rounded-full px-[32px] py-[20px] text-[16px]">
-                        Read More
-                    </Button>
+                <div className="flex items-center justify-center">
+                    <Link to="/about">
+                        <Button className="rounded-full px-[32px] py-[20px] text-[16px]">
+                            Read More
+                        </Button>
+                    </Link>
                 </div>
             </div>
         </div>
