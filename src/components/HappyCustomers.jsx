@@ -5,8 +5,8 @@ import CustomerFeedbackCard from '@/components/CustomerFeedbackCard';
 
 export default function HappyCustomers() {
     return (
-        <div className="bg-[#0F172A] text-white space-y-[34px] py-[20px]">
-            <div className='flex flex-col items-center justify-center text-center space-y-[12px]'>
+        <div className="space-y-[34px] bg-[#0F172A] py-[20px] text-white">
+            <div className="flex flex-col items-center justify-center space-y-[12px] text-center">
                 <Label label="HAPPY CUSTOMERS" labelClassName="text-[#99E830]">
                     <HappyCustomerIcon />
                 </Label>
@@ -14,10 +14,19 @@ export default function HappyCustomers() {
                     Satisfaction By Our Happy Clients
                 </Heading>
             </div>
-            <div className='px-[16px] space-x-[16px] flex overflow-scroll scrollbar-none '>
-                <CustomerFeedbackCard customerName="Mizanur Rahman" feedback="Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet dolor sit amet, consectetur " />
-                <CustomerFeedbackCard customerName="Mizanur Rahman" feedback="Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet dolor sit amet, consectetur " />
-                <CustomerFeedbackCard customerName="Mizanur Rahman" feedback="Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet dolor sit amet, consectetur " />
+            <div className="flex scrollbar-none space-x-[16px] overflow-scroll px-[16px]">
+                <CustomerFeedbackCard
+                    customerName="Mizanur Rahman"
+                    feedback="Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet dolor sit amet, consectetur "
+                />
+                <CustomerFeedbackCard
+                    customerName="Mizanur Rahman"
+                    feedback="Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet dolor sit amet, consectetur "
+                />
+                <CustomerFeedbackCard
+                    customerName="Mizanur Rahman"
+                    feedback="Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet dolor sit amet, consectetur "
+                />
             </div>
         </div>
     );
